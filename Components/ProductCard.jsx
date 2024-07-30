@@ -2,7 +2,7 @@ import React from 'react'
 import ReactIcon from './Icon'
 import classNames from 'classnames'
 
-function ProductCard({ setDark }) {
+function ProductCard() {
 
 
 
@@ -10,7 +10,7 @@ function ProductCard({ setDark }) {
         <div>
             <div className='relative w-56 h-72'>
                 <img src="/Product/product.png" alt="Product promotion" className='absolute w-full h-full rounded' />
-                <div className='w-full h-full !-z-20 rounded dark:bg-zinc-200 bg-yellow-50'></div>
+                <div className='w-full h-full !-z-20 rounded dark:bg-zinc-200 bg-[#E5E0DA]'></div>
 
                 <div className='z-20 absolute top-3 right-3'>
                     <div className='text-xs font-semibold text-black border border-zinc-900 w-9 h-9 rounded-full flex items-center justify-center'>
