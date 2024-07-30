@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductCard from '../ProductCard'
 import ReactIcon from '../Icon'
+import { Parallax } from 'react-scroll-parallax'
 
 function Promotion() {
   return (
@@ -14,12 +15,12 @@ function Promotion() {
         </div>
 
 
-        <div className='flex items-cente justify-center gap-12 pt-4'>
+        <Parallax speed={-5} className='flex items-cente justify-center gap-12 pt-4'>
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
-        </div>
+        </Parallax>
 
 
         <button className='flex items-center gap-1 text-neutral-200 text-base hover:gap-2 transition-all'>
