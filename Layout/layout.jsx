@@ -1,9 +1,17 @@
 import React from 'react'
-
-function Layout({children}) {
+import Footer from '@/Components/Footer/Footer'
+function Layout({ children }) {
   return (
     <div>
+
+      <div>
         {children}
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+
     </div>
   )
 }
