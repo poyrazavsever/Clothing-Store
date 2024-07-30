@@ -4,59 +4,36 @@ import ReactIcon from '../Icon'
 
 function Promotion() {
   return (
-    <div className='relative h-screen !overflow-hidden flex flex-col items-start justify-center gap-16 pt-16'>
+    <div className='relative h-full !overflow-hidden flex flex-col items-start justify-center gap-16 py-32 dark'>
 
-      <div className='container mx-auto'>
-        <h2 className='text-lg font-medium tracking-widest text-zinc-200'>Best of sale: shop our editor's picks</h2>
-      </div>
+      <div className='container mx-auto flex flex-col items-start gap-24'>
 
-      <div className="flex items-center justify-center gap-12 w-[4000px] animate-sliderAnimation dark">
+        <div>
+          <h2 className='text-lg font-medium tracking-widest text-zinc-200'>Best of sale: shop our <span className='text-transparent font-bold bg-clip-text bg-gradient-to-r from-zinc-300 to-orange-400'>editor's</span> picks</h2>
+          <span className='text-xs font-medium text-zinc-400'>The best products for you.</span>
+        </div>
 
-        {/* First 7 */}
 
-        <ProductCard />
+        <div className='flex items-cente justify-center gap-12 pt-4'>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
 
-        <ProductCard />
 
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-        {/* Repeat */}
-
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-        <ProductCard />
-
-      </div>
-
-      <div className='container mx-auto pt-8'>
         <button className='flex items-center gap-1 text-neutral-200 text-base hover:gap-2 transition-all'>
           <a href='/'>See All Product</a>
-          <span><ReactIcon iconName={"FiArrowUpRight"} iconType={"fi"} iconColor="text-neutral-400" /></span>
+          <span><ReactIcon iconName={"FiArrowUpRight"} iconType={"fi"} iconColor="text-neutral-200" /></span>
         </button>
+
+
       </div>
+
 
       {/* BG */}
 
-      <div className='w-1/2 h-1/2 bg-neutral-900 top-64 absolute -z-50 opacity-100'></div>
-      <div className='w-36 h-36 bg-neutral-900 top-16 right-32 absolute -z-50 opacity-100'></div>
+      <div className='w-36 h-36 rounded-full bg-gradient-to-r from-zinc-900 to-orange-500 top-32 left-32 absolute -z-50 opacity-30 blur-3xl'></div>
     </div>
   )
 }
