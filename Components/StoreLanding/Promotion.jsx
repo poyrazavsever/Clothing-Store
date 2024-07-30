@@ -10,7 +10,7 @@ function Promotion() {
         <h2 className='text-lg font-medium tracking-widest text-zinc-200'>Best of sale: shop our editor's picks</h2>
       </div>
 
-      <div className="flex items-center justify-center gap-12 w-[4000px] animate-sliderAnimation">
+      <div className="flex items-center justify-center gap-12 w-[4000px] animate-sliderAnimation dark">
 
         {/* First 7 */}
 
