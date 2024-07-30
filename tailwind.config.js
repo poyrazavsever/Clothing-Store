@@ -13,8 +13,8 @@ module.exports = {
     },
     extend: {
       animation: {
-        sliderAnimation: 'scroll 40s linear infinite',
-        sliderStart: 'sliderStart .6s ease-in-out',
+        sliderAnimation: 'scroll 60s linear infinite',
+        sliderStart: 'sliderStart .2s ease-in-out',
       },
 
 

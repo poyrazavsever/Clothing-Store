@@ -2,8 +2,8 @@ import React from 'react'
 import ReactIcon from './Icon'
 function ProductCard() {
     return (
-        <div className='w-56 h-72'>
-            <div className='w-full h-full relative'>
+        <div>
+            <div className='relative w-56 h-72'>
                 <img src="/Product/product.png" alt="Product promotion" className='absolute w-full h-full rounded' />
                 <div className='w-full h-full bg-neutral-200 !-z-20 rounded'></div>
 
