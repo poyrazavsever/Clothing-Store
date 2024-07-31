@@ -1,28 +1,35 @@
-import React from 'react'
+import classNames from 'classnames'
+import React, {useState} from 'react'
 
-function NavbarBottom() {
+function NavbarBottom({hoverLink, setHoverLink}) {
 
     const leftLinkStyle = "font-medium tracking-widest text-zinc-100 before:content-[''] before:absolute before:w-full before:h-[1px] before:rounded-md before:bg-neutral-100 before:-bottom-1 before:left-0 before:origin-right before:scale-x-0 before:transition-all before:ease-in-out before:duration-300 hover:before:origin-left hover:before:scale-x-100 relative cursor-pointer"
 
     const rightLinkStyle = "text-sm font-medium tracking-widest text-zinc-400 before:content-[''] before:absolute before:w-full before:h-[1px] before:rounded-md before:bg-neutral-100 before:-bottom-1 before:left-0 before:origin-right before:scale-x-0 before:transition-all before:ease-in-out before:duration-300 hover:before:origin-left hover:before:scale-x-100 relative cursor-pointer"
 
+    const [linkName, setLinkName] = useState("suits")
+    
+
     return (
 
-        <div className='bg-neutral-950 bg-opacity-90 backdrop-blur-3xl py-8'>
+        <div className={classNames({
+            'bg-neutral-950 bg-opacity-90 backdrop-blur-3xl py-8 !z-50' : true,
+            'hidden' : hoverLink === "", 
+        })} onMouseEnter={() => {setHoverLink(hoverLink)}} onMouseLeave={() => {setHoverLink("")}}>
             <div className='h-full container mx-auto flex items-start gap-24'>
 
                 <div className='h-full flex items-start gap-16'>
-                    <ul className='flex flex-col items-start gap-4'>
-                        <li className={leftLinkStyle}>Suist</li>
-                        <li className={leftLinkStyle}>Shirts</li>
-                        <li className={leftLinkStyle}>Outerwear</li>
-                        <li className={leftLinkStyle}>Trousers</li>
-                        <li className={leftLinkStyle}>Knitwear</li>
-                        <li className={leftLinkStyle}>Accessories</li>
-                        <li className={leftLinkStyle}>Footwear</li>
-                        <li className={leftLinkStyle}>Activewear</li>
-                        <li className={leftLinkStyle}>Occasion Wear</li>
-                        <li className={leftLinkStyle}>Sale</li>
+                    <ul className='flex flex-col items-start gap-6'>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("suits")} >Suits</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("shirts")}>Shirts</li> 
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("outerwear")}>Outerwear</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("trousers")}>Trousers</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("knitwear")}>Knitwear</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("accessories")}>Accessories</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("footwear")}>Footwear</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("activewear")}>Activewear</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("occasion wear")}>Occasionwear</li>
+                        <li className={leftLinkStyle} onMouseEnter={() => setLinkName("sale")}>Sale</li>
                     </ul>
 
                     <div className='h-96 w-[1px] bg-neutral-600'></div>
@@ -42,7 +49,7 @@ function NavbarBottom() {
 
                     <div className='flex w-full items-start justify-between'>
                         <ul className='flex flex-col items-start gap-4'>
-                            <li className={rightLinkStyle}>Suist</li>
+                            <li className={rightLinkStyle}>Suits</li>
                             <li className={rightLinkStyle}>Shirts</li>
                             <li className={rightLinkStyle}>Outerwear</li>
                             <li className={rightLinkStyle}>Trousers</li>
@@ -50,6 +57,7 @@ function NavbarBottom() {
                             <li className={rightLinkStyle}>Accessories</li>
                             <li className={rightLinkStyle}>Footwear</li>
                             <li className={rightLinkStyle}>Activewear</li>
+                            <li className="text-sm font-medium tracking-widest text-green-400">{linkName}</li>
                         </ul>
 
                         <div className='flex items-start justify-center gap-12'>
