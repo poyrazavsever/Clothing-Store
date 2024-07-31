@@ -34,7 +34,7 @@ function Promotion() {
 
       {/* BG */}
 
-      <div className='w-36 h-36 rounded-full bg-gradient-to-r from-zinc-900 to-orange-500 top-32 left-32 absolute -z-50 opacity-30 blur-3xl'></div>
+      <div className='w-36 h-36 rounded-full bg-gradient-to-r from-zinc-900 to-orange-500 top-32 left-32 absolute -z-50 opacity-60 blur-3xl'></div>
     </div>
   )
 }
