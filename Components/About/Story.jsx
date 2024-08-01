@@ -11,7 +11,7 @@ function Story() {
 
         <div className='w-1/4'>
 
-          <img src="/About/collection.png" alt="collection" className='h-full absolute left-0 z-30' />
+          <img src="/About/story.png" alt="collection" className='h-full absolute left-0 z-30' />
 
           <div className='h-1/2 w-4/6 bg-neutral-900 absolute bottom-0 z-10'></div>
 
