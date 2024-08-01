@@ -3,7 +3,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 function Story() {
   return (
-    <div className='h-screen bg-neutral-950'>
+    <div className='h-screen bg-neutral-950 z-40'>
 
       <div className='h-full relative flex items-start justify-between'>
 
@@ -11,9 +11,8 @@ function Story() {
 
         <div className='w-1/4'>
 
-          <Parallax speed={-30} className='h-full absolute left-0 !z-20 overflow-hidden'>
-            <img src="/About/collection.png" alt="collection" className='h-full' />
-          </Parallax>
+          <img src="/About/collection.png" alt="collection" className='h-full absolute left-0 z-30' />
+
           <div className='h-1/2 w-4/6 bg-neutral-900 absolute bottom-0 z-10'></div>
 
         </div>
