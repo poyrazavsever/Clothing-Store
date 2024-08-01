@@ -1,6 +1,8 @@
 import { useState } from "react"
 import Icon from "../Icon"
 import classNames from "classnames"
+import Link from "next/link"
+
 
 function RegisterModal({ isRegisterVisible, setIsRegisterVisible }) {
 
@@ -16,50 +18,62 @@ function RegisterModal({ isRegisterVisible, setIsRegisterVisible }) {
 
     return (
         <div className={classNames({
-            "animate-card absolute flex items-center justify-center w-screen h-screen backdrop-blur-2xl !z-50 overflow-hidden": true,
+            "animate-card absolute flex items-center justify-center w-screen h-screen backdrop-blur-3xl !z-50 overflow-hidden backdrop-brightness-50": true,
             "flex": isRegisterVisible,
             "hidden": !isRegisterVisible
         })}>
 
-            <div className='h-[500px] w-[400px] bg-white border p-8 border-tert-200 rounded-sm'>
+            <div className='h-[530px] w-[400px] bg-neutral-600 bg-opacity-50 border border-neutral-600 p-8 border-tert-200 rounded-md'>
 
-                <div className="flex w-full items-start justify-between">
+                <form className="flex flex-col items-start gap-8 w-full">
 
-                    <h2 className='text-2xl font-semibold text-tert-200'>Kayıt Ol</h2>
+                    <div className="w-full flex flex-col gap-3">
+                        <label htmlFor="name" className="text-white text-xs font-semibold uppercase tracking-widest">Your Name</label>
 
-                    <button onClick={() => setIsRegisterVisible(false)}>
-                        <Icon iconType="ai" iconName="AiOutlineCloseCircle" iconColor="text-tert-200" classname="text-2xl pr-8" />
-                    </button>
-
-
-                </div>
-
-                <form className="flex flex-col items-start gap-4 w-full">
-
-                    <input type="text" placeholder='Ad' className='w-full rounded-sm px-4 py-2 border border-neutral-300 focus:outline-none text-neutral-600 placeholder:text-neutral-400' />
-
-                    <input type="text" placeholder='Soyad' className='w-full rounded-sm px-4 py-2 border border-neutral-300 focus:outline-none text-neutral-600 placeholder:text-neutral-400' />
-
-                    <input type="email" placeholder='E-Posta' className='w-full rounded-sm px-4 py-2 border border-neutral-300 focus:outline-none text-neutral-600 placeholder:text-neutral-400' />
-
-                    <div className="w-full relative">
-                        <input type={visiblePassword ? "text" : "password"} placeholder='Şifre' className='w-full rounded-sm px-4 py-2 border border-neutral-300 focus:outline-none text-neutral-600 placeholder:text-neutral-400' />
-                        {!visiblePassword ?
-                            (<button onClick={handlePassword}>
-                                <Icon iconType="ai" iconName="AiOutlineEye" iconColor="text-neutral-400" classname={passwordBtn} />
-                            </button>) :
-                            (<button onClick={handlePassword}>
-                                <Icon iconType="ai" iconName="AiOutlineEyeInvisible" iconColor="text-neutral-400" classname={passwordBtn} />
-                            </button>)}
+                        <input id="name" type="text" placeholder='David Jhone' className='w-full px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 text-white' />
                     </div>
 
-                    <button className="flex items-center justify-center w-full px-4 py-2 rounded-sm bg-tert-200 text-white hover:bg-tert-100 transition-all">Giriş Yap</button>
+                    <div className="w-full flex flex-col gap-3">
+                        <label htmlFor="email" className="text-white text-xs font-semibold uppercase tracking-widest">E-mail</label>
+
+                        <input id="email" type="email" placeholder='example@outlook.com' className='w-full px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 text-white' />
+                    </div>
+
+                    <div className="w-full flex flex-col gap-3">
+                        <label htmlFor="password" className="text-white text-xs font-semibold uppercase tracking-widest">Password</label>
+
+                        <div className="w-full relative">
+                            <input id="password" type={visiblePassword ? "text" : "password"} placeholder='********' className='w-full px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 text-white' />
+                            {!visiblePassword ?
+                                (<button onClick={handlePassword}>
+                                    <Icon iconType="ai" iconName="AiOutlineEye" iconColor="text-neutral-400" classname={passwordBtn} />
+                                </button>) :
+                                (<button onClick={handlePassword}>
+                                    <Icon iconType="ai" iconName="AiOutlineEyeInvisible" iconColor="text-neutral-400" classname={passwordBtn} />
+                                </button>)}
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col items-start gap-3 w-full">
+                        <div className="flex flex-col items-start gap-1">
+                            <p className="text-xs text-neutral-400">Already Registered?  <Link href="/" className="font-medium  text-neutral-200">Log in here.</Link></p>
+                        </div>
+
+                        <div className="flex items-center gap-2 w-full">
+                            <input id="privacy" type="checkbox" className='px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 ' />
+                            <label htmlFor="privacy" className="text-zinc-500 text-xs tracking-wide">I accept the terms and conditions</label>
+                        </div>
+                        <div className="flex items-center gap-2 w-full">
+                            <input id="privacy" type="checkbox" className='px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 ' />
+                            <label htmlFor="privacy" className="text-zinc-500 text-xs tracking-wide">I accept the Privacy Policy</label>
+                        </div>
+
+                    </div>
+
+
+                    <button className="flex uppercase tracking-widest text-sm font-semibold items-center justify-center w-full px-4 py-3 rounded-sm bg-amber-600 text-white hover:bg-orange-700 transition-all">Sign in</button>
 
                 </form>
-
-                <div className="flex flex-col items-start gap-1 pt-5">
-                    <p className="text-xs text-neutral-500">Zaten Kayıt Yaptınız mı? <span className="font-medium underline text-neutral-700">Buradan giriş yapın.</span></p>
-                </div>
 
             </div>
 

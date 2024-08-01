@@ -16,12 +16,12 @@ function LoginModal({ isLoginVisible, setIsLoginVisible }) {
 
     return (
         <div className={classNames({
-            "animate-card absolute flex items-center justify-center w-screen h-screen backdrop-blur-3xl !z-50 overflow-hidden": true,
+            "animate-card absolute flex items-center justify-center w-screen h-screen backdrop-blur-3xl backdrop-opacity-10 backdrop-brightness-50 !z-50 overflow-hidden": true,
             "flex": isLoginVisible,
             "hidden": !isLoginVisible
         })}>
 
-            <div className='h-[580px] w-[400px] bg-neutral-950 bg-opacity-50 border border-neutral-950 p-8 border-tert-200 rounded-sm'>
+            <div className='h-[580px] w-[400px] bg-neutral-600 bg-opacity-50 border border-neutral-600 p-8 border-tert-200 rounded-md'>
 
                 <form className="flex flex-col items-start gap-10 w-full">
 

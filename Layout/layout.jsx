@@ -7,8 +7,8 @@ import classNames from 'classnames';
 
 function Layout({ children }) {
 
-  const [isLoginVisible, setIsLoginVisible] = useState(true);
-  const [isRegisterVisible, setIsRegisterVisible] = useState(false);
+  const [isLoginVisible, setIsLoginVisible] = useState(false);
+  const [isRegisterVisible, setIsRegisterVisible] = useState(true);
 
   return (
     <div className={classNames({
