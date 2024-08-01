@@ -8,7 +8,7 @@ import Collection from './Collection'
 function Storelanding() {
   return (
     <div>
-        <Banner />
+        <Banner /> 
         <Promotion />
         <Collection />
     </div>
