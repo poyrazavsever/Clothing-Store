@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import ReactIcon from '../Icon'
 
 function NavbarTop({ setHoverLink }) {
 
@@ -27,9 +28,15 @@ function NavbarTop({ setHoverLink }) {
 
                 </div>
 
-                <div>
+                <div className='flex items-center justify-center gap-8'>
 
-                    <a href="/" className={linkStyle}>Sign Up</a>
+                    <a href="/" className="">
+                    <ReactIcon iconType="fa" iconName="FaUser" iconColor="text-zinc-300"/>
+                    </a>
+
+                    <a href="/" className="">
+                    <ReactIcon iconType="fa" iconName="FaShoppingCart" iconColor="text-zinc-300"/>
+                    </a>
 
                 </div>
 

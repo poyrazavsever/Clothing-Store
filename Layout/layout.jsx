@@ -1,20 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
+import LoginModal from '@/components/Auth/LoginModal'
+import RegisterModal from '@/components/Auth/RegisterModal'
+import classNames from 'classnames';
 
 function Layout({ children }) {
+
+  const [isLoginVisible, setIsLoginVisible] = useState(true);
+  const [isRegisterVisible, setIsRegisterVisible] = useState(false);
+
   return (
-    <div>
+    <div className={classNames({
+      "h-screen !overflow-x-hidden": true,
+      "overflow-hidden ": isLoginVisible || isRegisterVisible,
+      "": !isLoginVisible || !isRegisterVisible
+    })}>
 
       <Navbar />
 
       <div>
-        {children}
+        <LoginModal isLoginVisible={isLoginVisible} setIsLoginVisible={setIsLoginVisible} />
+        <RegisterModal isRegisterVisible={isRegisterVisible} setIsRegisterVisible={setIsRegisterVisible} />
       </div>
 
-      <div>
-        <Footer />
-      </div>
+
+      {children}
+
+
+      <Footer />
+
 
     </div>
   )
