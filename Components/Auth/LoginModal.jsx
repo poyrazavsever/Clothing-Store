@@ -3,7 +3,7 @@ import Icon from "../Icon"
 import classNames from "classnames"
 import Link from "next/link"
 
-function LoginModal({ isLoginVisible, setIsLoginVisible }) {
+function LoginModal({ isLoginVisible, setIsRegisterVisible, setIsLoginVisible }) {
 
     const [visiblePassword, setVisiblePassword] = useState(false)
     const passwordBtn = "text-2xl absolute top-[9px] right-3"
@@ -16,12 +16,23 @@ function LoginModal({ isLoginVisible, setIsLoginVisible }) {
 
     return (
         <div className={classNames({
-            "animate-card absolute flex items-center justify-center w-screen h-screen backdrop-blur-3xl backdrop-opacity-10 backdrop-brightness-50 !z-50 overflow-hidden": true,
+            "animate-card absolute flex items-center justify-center w-screen h-screen backdrop-blur-3xl !z-50 overflow-hidden backdrop-brightness-50": true,
             "flex": isLoginVisible,
             "hidden": !isLoginVisible
         })}>
 
-            <div className='h-[580px] w-[400px] bg-neutral-600 bg-opacity-50 border border-neutral-600 p-8 border-tert-200 rounded-md'>
+            <div className='h-[640px] w-[400px] bg-neutral-600 bg-opacity-50 border border-neutral-600 p-8 border-tert-200 rounded-md'>
+
+                <div className="flex w-full items-start justify-between">
+
+                    <h2 className='text-2xl font-semibold text-neutral-200'>Log in</h2>
+
+                    <button onClick={() => setIsLoginVisible(false)}>
+                        <Icon iconType="ai" iconName="AiOutlineCloseCircle" iconColor="text-neutral-200" classname="text-2xl pr-8" />
+                    </button>
+
+
+                </div>
 
                 <form className="flex flex-col items-start gap-10 w-full">
 
@@ -57,7 +68,11 @@ function LoginModal({ isLoginVisible, setIsLoginVisible }) {
                         <p className="text-xs text-neutral-400">Forgot your password?  <Link href="/" className="font-medium  text-neutral-200">Reset it here</Link></p>
                     </div>
                     <div className="flex flex-col items-start gap-1">
-                        <p className="text-xs text-neutral-400">Not registered yet?  <Link href="/" className="font-medium  text-neutral-200">Register here.</Link></p>
+                        <p className="text-xs text-neutral-400">Not registered yet?  <button className="font-medium  text-neutral-200" onClick={() => {
+                            event.preventDefault();
+                            setIsLoginVisible(false)
+                            setIsRegisterVisible(true)
+                        }}>Register here.</button></p>
                     </div>
                 </div>
 

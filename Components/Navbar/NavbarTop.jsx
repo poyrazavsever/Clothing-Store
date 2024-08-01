@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactIcon from '../Icon'
 
-function NavbarTop({ setHoverLink }) {
+function NavbarTop({ setHoverLink, setIsRegisterVisible }) {
 
     const linkStyle = "text-zinc-100 uppercase text-xs font-medium tracking-widest before:content-[''] before:absolute before:w-full before:h-[1px] before:rounded-md before:bg-neutral-100 before:-bottom-1 before:left-0 before:origin-right before:scale-x-0 before:transition-all before:ease-in-out before:duration-300 hover:before:origin-left hover:before:scale-x-100 relative"
 
@@ -30,13 +30,9 @@ function NavbarTop({ setHoverLink }) {
 
                 <div className='flex items-center justify-center gap-8'>
 
-                    <a href="/" className="">
+                    <button onClick={() => setIsRegisterVisible(true)}>
                     <ReactIcon iconType="fa" iconName="FaUser" iconColor="text-zinc-300"/>
-                    </a>
-
-                    <a href="/" className="">
-                    <ReactIcon iconType="fa" iconName="FaShoppingCart" iconColor="text-zinc-300"/>
-                    </a>
+                    </button>
 
                 </div>
 

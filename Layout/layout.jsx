@@ -8,7 +8,7 @@ import classNames from 'classnames';
 function Layout({ children }) {
 
   const [isLoginVisible, setIsLoginVisible] = useState(false);
-  const [isRegisterVisible, setIsRegisterVisible] = useState(true);
+  const [isRegisterVisible, setIsRegisterVisible] = useState(false);
 
   return (
     <div className={classNames({
@@ -17,11 +17,11 @@ function Layout({ children }) {
       "": !isLoginVisible || !isRegisterVisible
     })}>
 
-      <Navbar />
+      <Navbar setIsRegisterVisible={setIsRegisterVisible}/>
 
       <div>
-        <LoginModal isLoginVisible={isLoginVisible} setIsLoginVisible={setIsLoginVisible} />
-        <RegisterModal isRegisterVisible={isRegisterVisible} setIsRegisterVisible={setIsRegisterVisible} />
+        <LoginModal isLoginVisible={isLoginVisible} setIsRegisterVisible={setIsRegisterVisible} setIsLoginVisible={setIsLoginVisible}/>
+        <RegisterModal isRegisterVisible={isRegisterVisible} setIsLoginVisible={setIsLoginVisible} setIsRegisterVisible={setIsRegisterVisible}/>
       </div>
 
 

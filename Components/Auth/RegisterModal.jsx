@@ -1,10 +1,9 @@
 import { useState } from "react"
 import Icon from "../Icon"
 import classNames from "classnames"
-import Link from "next/link"
 
 
-function RegisterModal({ isRegisterVisible, setIsRegisterVisible }) {
+function RegisterModal({ isRegisterVisible, setIsLoginVisible, setIsRegisterVisible }) {
 
     const [visiblePassword, setVisiblePassword] = useState(false)
 
@@ -23,7 +22,18 @@ function RegisterModal({ isRegisterVisible, setIsRegisterVisible }) {
             "hidden": !isRegisterVisible
         })}>
 
-            <div className='h-[530px] w-[400px] bg-neutral-600 bg-opacity-50 border border-neutral-600 p-8 border-tert-200 rounded-md'>
+            <div className='h-[560px] w-[400px] bg-neutral-600 bg-opacity-50 border border-neutral-600 p-8 border-tert-200 rounded-md'>
+
+                <div className="flex w-full items-start justify-between">
+
+                    <h2 className='text-2xl font-semibold text-neutral-200'>Sign in</h2>
+
+                    <button onClick={() => setIsRegisterVisible(false)}>
+                        <Icon iconType="ai" iconName="AiOutlineCloseCircle" iconColor="text-neutral-200" classname="text-2xl pr-8" />
+                    </button>
+
+
+                </div>
 
                 <form className="flex flex-col items-start gap-8 w-full">
 
@@ -56,7 +66,11 @@ function RegisterModal({ isRegisterVisible, setIsRegisterVisible }) {
 
                     <div className="flex flex-col items-start gap-3 w-full">
                         <div className="flex flex-col items-start gap-1">
-                            <p className="text-xs text-neutral-400">Already Registered?  <Link href="/" className="font-medium  text-neutral-200">Log in here.</Link></p>
+                            <p className="text-xs text-neutral-400">Already Registered? <button className="font-medium  text-neutral-200" onClick={() => {
+                                event.preventDefault();
+                                setIsRegisterVisible(false)
+                                setIsLoginVisible(true)
+                            }}>Log in here.</button></p>
                         </div>
 
                         <div className="flex items-center gap-2 w-full">

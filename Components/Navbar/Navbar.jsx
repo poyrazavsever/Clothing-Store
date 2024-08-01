@@ -2,13 +2,13 @@ import React, {useState} from 'react'
 import NavbarTop from './NavbarTop'
 import NavbarBottom from './NavbarBottom'
 
-function Navbar() {
+function Navbar({setIsRegisterVisible}) {
 
   const [hoverLink, setHoverLink] = useState("")
 
   return (
     <div className='w-full fixed top-0 !z-50'>
-        <NavbarTop setHoverLink={setHoverLink}/>
+        <NavbarTop setHoverLink={setHoverLink} setIsRegisterVisible={setIsRegisterVisible}/>
         <NavbarBottom hoverLink={hoverLink} setHoverLink={setHoverLink}/>
     </div>
   )
