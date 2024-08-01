@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
 import LoginModal from '@/components/Auth/LoginModal'
@@ -17,15 +17,17 @@ function Layout({ children }) {
       "": !isLoginVisible || !isRegisterVisible
     })}>
 
-      <Navbar setIsRegisterVisible={setIsRegisterVisible}/>
+      <Navbar setIsRegisterVisible={setIsRegisterVisible} />
 
       <div>
-        <LoginModal isLoginVisible={isLoginVisible} setIsRegisterVisible={setIsRegisterVisible} setIsLoginVisible={setIsLoginVisible}/>
-        <RegisterModal isRegisterVisible={isRegisterVisible} setIsLoginVisible={setIsLoginVisible} setIsRegisterVisible={setIsRegisterVisible}/>
+        <LoginModal isLoginVisible={isLoginVisible} setIsRegisterVisible={setIsRegisterVisible} setIsLoginVisible={setIsLoginVisible} />
+        <RegisterModal isRegisterVisible={isRegisterVisible} setIsLoginVisible={setIsLoginVisible} setIsRegisterVisible={setIsRegisterVisible} />
       </div>
 
 
-      {children}
+      <div>
+        {children}
+      </div>
 
 
       <Footer />
