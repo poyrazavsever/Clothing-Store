@@ -22,7 +22,7 @@ function NavbarTop({ setHoverLink, setIsRegisterVisible }) {
                         <li><a href="/" className={linkStyle} onMouseEnter={() => setHoverLink("woman")} >Woman</a></li>
                         <li><a href="/" className={linkStyle} onMouseEnter={() => setHoverLink("kids")} >Kids</a></li>
                         <li><a href="/" className={linkStyle}>Collection</a></li>
-                        <li><a href="/" className={linkStyle}>Shop</a></li>
+                        <li><a href="/shop" className={linkStyle}>Shop</a></li>
                         <li><a href="/" className={linkStyle}>Blog</a></li>
                     </ul>
 
