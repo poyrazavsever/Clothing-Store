@@ -30,7 +30,7 @@ function Layout({ children }) {
       </div>
 
 
-      <div className='mt-12'>
+      <div className='relative pt-36 bg-neutral-950 z-20'>
         <Footer />
       </div>
 

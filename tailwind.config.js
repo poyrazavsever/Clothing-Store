@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     screens: {
       sm: '480px',
-      md: '724px',
+      md: '748px',
+      lg:'924px',
     },
     extend: {
       animation: {

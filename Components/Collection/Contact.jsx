@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { Parallax } from 'react-scroll-parallax'
 function Contact() {
     return (
         <div className='h-screen bg-neutral-200 relative flex items-start justify-between'>
 
-            <div>
-                <img src="/Collection/contact.png" alt="leftsidebg" className='h-screen absolute left-0 z-10 opacity-50 xl:opacity-70' />
-            </div>
+            <Parallax speed={-30} className='w-1/2 h-screen z-10'>
+                <img src="/Collection/contact.png" alt="leftsidebg" className='h-screen absolute left-0 z-10 opacity-50 xl:opacity-70 object-cover' />
+            </Parallax >
 
             <div className='w-1/2 relative pt-12 flex flex-col items-start gap-8 pl-12 xl:pl-0 z-30'>
 

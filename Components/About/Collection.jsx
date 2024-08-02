@@ -1,12 +1,11 @@
 import React from 'react'
 import ReactIcon from '../Icon'
-import { Parallax } from 'react-scroll-parallax'
 
 function Collection() {
   return (
     <div className='h-screen bg-neutral-200 relative'>
 
-      <div className='pt-36 container mx-auto flex flex-col items-start justify-center gap-6'>
+      <div className='lg:pt-36 container mx-auto flex flex-col items-start justify-center gap-6'>
 
         <h2 className='text-8xl font-bold tracking-widest text-neutral-500'>Our Collection</h2>
 
@@ -21,9 +20,9 @@ function Collection() {
 
       </div>
 
-      <div className='absolute right-0 bottom-0 z-10'>
+      <div className='h-full absolute right-0 bottom-0 z-10'>
 
-        <img src="/About/collection.png" alt="collection" />
+        <img src="/About/collection.png" alt="collection" className='h-full'/>
 
       </div>
 
