@@ -16,10 +16,7 @@ module.exports = {
         sliderAnimation: 'scroll 60s linear infinite',
         sliderStart: 'sliderStart .2s ease-in-out',
       },
-      screens : {
-        "lg" : {"max" : "1440", "min" : "924px"},
-        "xl" : {"min": "1440px"}
-      },
+      
 
       keyframes: {
         scroll: {

@@ -7,7 +7,7 @@ import Products from '@/Components/Store/Products'
 
 function store() {
   return (
-    <div className='mt-36 flex items-start justify-center px-32'>
+    <div className='mt-36 flex items-start justify-center gap-12 px-32'>
 
       <div>
         <Category />

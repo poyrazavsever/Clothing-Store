@@ -75,11 +75,11 @@ function RegisterModal({ isRegisterVisible, setIsLoginVisible, setIsRegisterVisi
 
                         <div className="flex items-center gap-2 w-full">
                             <input id="privacy" type="checkbox" className='px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 ' />
-                            <label htmlFor="privacy" className="text-zinc-500 text-xs tracking-wide">I accept the terms and conditions</label>
+                            <label htmlFor="privacy" className="text-zinc-200 text-xs tracking-wide">I accept the terms and conditions</label>
                         </div>
                         <div className="flex items-center gap-2 w-full">
                             <input id="privacy" type="checkbox" className='px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 ' />
-                            <label htmlFor="privacy" className="text-zinc-500 text-xs tracking-wide">I accept the Privacy Policy</label>
+                            <label htmlFor="privacy" className="text-zinc-200 text-xs tracking-wide">I accept the Privacy Policy</label>
                         </div>
 
                     </div>
