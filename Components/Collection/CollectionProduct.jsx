@@ -7,7 +7,7 @@ import Products from './Products'
 
 function CollectionProduct() {
     return (
-        <div className='bg-neutral-950 relative flex items-start justify-center p-24 !z-20'>
+        <div className='bg-neutral-950 relative flex items-start justify-center px-24 py-16 !z-20'>
 
             <div className='w-fit pl-4 lg:pl-16 xl:pl-48 flex flex-col items-start gap-12'>
                 <TopMenu />
