@@ -7,7 +7,7 @@ function ColorCategory() {
         <div className="w-fit flex flex-col items-start gap-4 bg-transparent border-neutral-600 rounded border px-4 py-6">
             <span className="text-sm font-medium tracking-widest text-neutral-100 uppercase">Colors</span>
 
-            <div className="w-fit min-w-[200px] h-72 overflow-y-scroll scrollbar-thin scrollbar-thumb-neutral-950 scrollbar-track-white scrollbar-track-custom-light">
+            <div className="w-fit min-w-[200px] h-72 overflow-y-scroll scrollbar-thin scrollbar-thumb-neutral-950 scrollbar-track-white">
 
                 <div className="flex flex-col items-start gap-5 relative">
 
