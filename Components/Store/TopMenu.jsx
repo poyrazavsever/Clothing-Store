@@ -26,9 +26,9 @@ function TopMenu() {
       <div className='w-full flex items-center justify-between'>
         <span className='text-sm text-neutral-500'>XXX Ürün</span>
 
-        <div className='relative z-20'>
+        <div className='relative z-40'>
           <button onClick={() => setIsOpen(!isOpen)} className='py-1 px-6 text-sm flex items-center gap-1 text-neutral-200 bg-neutral-900 opacity-50 border border-neutral-500 rounded-md'>
-            <span>Önerilen Sıralama</span>
+            <span>Recommended Sort</span>
             <ReactIcon iconType="ai" iconName="AiOutlineArrowRight" iconColor="text-neutral-200" classname={classNames({
               "text-sm transition-all": true,
               "rotate-0": !isOpen,
@@ -38,27 +38,27 @@ function TopMenu() {
           {isOpen ? (
             <ul className='absolute bg-neutral-900 rounded py-4 px-4 inline-flex flex-col items-start gap-2 text-xs animate-card w-full'>
               <li className={linkStyle}>
-                <button>Önerilen Sıralama</button>
+                <button>Recommended Sort</button>
               </li>
 
               <li className={linkStyle}>
-                <button>En Çok Değerlendirilenler</button>
+                <button>Most Reviewed</button>
               </li>
 
               <li className={linkStyle}>
-                <button>En Düşük Fiyat</button>
+                <button>Lowest price</button>
               </li>
 
               <li className={linkStyle}>
-                <button>En Yüksek Fiyat</button>
+                <button>Highest Price</button>
               </li>
 
               <li className={linkStyle}>
-                <button>En Yeniler</button>
+                <button>The Newests</button>
               </li>
 
               <li className={linkStyle}>
-                <button>En Çok Satanlar</button>
+                <button>Best sellers</button>
               </li>
             </ul>
           ) : null}
