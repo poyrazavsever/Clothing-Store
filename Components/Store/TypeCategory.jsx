@@ -1,38 +1,66 @@
-import { useState } from "react"
-import ReactIcon from "../Icon"
-import classNames from "classnames"
 
 function TypeCategory() {
 
-    const [isVisible, setIsVisible] = useState(true)
+    const labelStyle = "text-neutral-200 text-xs"
 
     return (
-        <div>
+        <div className="w-fit flex flex-col items-start gap-4 bg-transparent border-neutral-600 rounded border px-4 py-6">
+            <span className="text-sm font-medium tracking-widest text-neutral-100 uppercase">Category</span>
 
-            <div className="flex flex-col items-start gap-4">
+            <div className="w-fit min-w-[200px] h-72 overflow-y-scroll scrollbar-thin scrollbar-thumb-neutral-950 scrollbar-track-white scrollbar-track-custom-light">
 
-                <button className="flex items-center gap-1" onClick={() => setIsVisible(!isVisible)}>
-                    <ReactIcon iconType="ai" iconName="AiOutlineArrowRight" iconColor="text-neutral-700" classname={classNames({
-                        "text-sm transition-all": true,
-                        "rotate-0": !isVisible,
-                        "rotate-90": isVisible,
-                    })} />
-                    <span className="text-base md:text-lg font-medium text-neutral-400 uppercase">Kategoriler</span>
-                </button>
+                <div className="flex flex-col items-start gap-5 relative">
 
-                <div className={classNames({
-                    "flex-col items-start gap-3 animate-card": true,
-                    "hidden": !isVisible,
-                    "flex": isVisible,
-                })}>
-                    <div className="flex items-center gap-2 cursor-pointer" key="yeni gelen elibseler">
-                        <input type="checkbox" className="accent-neutral-200" id="new staff" />
-                        <label htmlFor="new staff" className="cursor-pointer">yeni gelen elibseler</label>
+                    <div className=" flex flex-col items-start gap-3 animate-card pr-10">
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum. </label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
+                        <div className="flex items-center gap-2 cursor-pointer" key="Lorem, ipsum.">
+                            <input type="checkbox" className="accent-neutral-200" id="Lorem, ipsum." />
+                            <label htmlFor="Lorem, ipsum." className={labelStyle}>Lorem, ipsum.</label>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
-
         </div>
     )
 }
