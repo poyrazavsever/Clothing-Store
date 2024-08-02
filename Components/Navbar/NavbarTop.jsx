@@ -18,12 +18,12 @@ function NavbarTop({ setHoverLink, setIsRegisterVisible }) {
                     <ul className='flex items-center justify-center gap-5'>
                         <li><a href="/" className={linkStyle}>Home</a></li>
                         <li><a href="/about" className={linkStyle}>About</a></li>
-                        <li><a href="/" className={linkStyle} onMouseEnter={() => setHoverLink("man")}>Man</a></li>
-                        <li><a href="/" className={linkStyle} onMouseEnter={() => setHoverLink("woman")} >Woman</a></li>
-                        <li><a href="/" className={linkStyle} onMouseEnter={() => setHoverLink("kids")} >Kids</a></li>
-                        <li><a href="/" className={linkStyle}>Collection</a></li>
+                        <li><a href="/shop" className={linkStyle} onMouseEnter={() => setHoverLink("man")}>Man</a></li>
+                        <li><a href="/shop" className={linkStyle} onMouseEnter={() => setHoverLink("woman")} >Woman</a></li>
+                        <li><a href="/shop" className={linkStyle} onMouseEnter={() => setHoverLink("kids")} >Kids</a></li>
+                        <li><a href="/collection" className={linkStyle}>Collection</a></li>
                         <li><a href="/shop" className={linkStyle}>Shop</a></li>
-                        <li><a href="/" className={linkStyle}>Blog</a></li>
+                        <li><a href="/blog" className={linkStyle}>Blog</a></li>
                     </ul>
 
                 </div>
