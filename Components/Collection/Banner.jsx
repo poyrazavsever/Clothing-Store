@@ -5,7 +5,7 @@ function Banner() {
   const imageStyle = "w-36 lg:w-44 xl:w-52 opacity-50"
 
   return (
-    <div className='h-screen relative bg-neutral-300 pt-24 w-'>
+    <div className='h-screen relative bg-neutral-300 pt-24'>
 
       <div>
 
@@ -17,7 +17,7 @@ function Banner() {
 
       </div>
 
-      <Parallax speed={-50} className='flex items-center justify-center gap-4'>
+      <Parallax speed={-30} className='relative flex items-center justify-center gap-4'>
 
         <img src="/Collection/1.png" alt="1 banner sc" className={imageStyle}/>
         <img src="/Collection/2.png" alt="2 banner sc" className={imageStyle}/>

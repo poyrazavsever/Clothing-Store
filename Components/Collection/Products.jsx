@@ -1,11 +1,19 @@
 import React from 'react'
-
+import ProductCard from '../ProductCard'
 function Products() {
-    return (
-        <div>
-            Products
-        </div>
-    )
+  return (
+    <div className='dark grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-16'>
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+    </div>
+  )
 }
 
 export default Products

@@ -2,13 +2,13 @@ import React from 'react'
 
 //Pages
 import Banner from '@/Components/Collection/Banner'
-import Products from '@/Components/Collection/Products'
+import CollectionProduct from '@/Components/Collection/CollectionProduct'
 
 function collection() {
   return (
     <div>
         <Banner />
-        <Products />
+        <CollectionProduct />
     </div>
   )
 }
