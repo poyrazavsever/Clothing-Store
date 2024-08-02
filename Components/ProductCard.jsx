@@ -8,7 +8,7 @@ function ProductCard() {
 
     return (
         <div>
-            <div className='relative w-56 h-72'>
+            <div className='relative w-48 h-64'>
                 <img src="/Product/product.png" alt="Product promotion" className='absolute w-full h-full rounded' />
                 <div className='w-full h-full !-z-20 rounded dark:bg-zinc-200 bg-[#E5E0DA]'></div>
 
