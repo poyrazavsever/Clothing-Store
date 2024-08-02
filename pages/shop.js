@@ -3,6 +3,7 @@ import React from 'react'
 //Components 
 import Category from '@/Components/Store/Category'
 import TopMenu from '@/Components/Store/TopMenu'
+import Products from '@/Components/Store/Products'
 
 function store() {
   return (
@@ -12,8 +13,9 @@ function store() {
         <Category />
       </div>
 
-      <div className='pl-48 w-full'>
+      <div className='pl-48 w-full flex flex-col items-start gap-12'>
           <TopMenu />
+          <Products />
       </div>
 
     </div>
