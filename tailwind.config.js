@@ -10,7 +10,8 @@ module.exports = {
     screens: {
       sm: '480px',
       md: '724px',
-      lg:'1440px',
+      lg:'924px',
+      xl:'1440px',
     },
     extend: {
       animation: {

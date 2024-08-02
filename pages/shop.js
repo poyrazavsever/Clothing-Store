@@ -13,7 +13,7 @@ function store() {
         <Category />
       </div>
 
-      <div className=' pl-4 md:pl-16 lg:pl-48 w-full flex flex-col items-start gap-12'>
+      <div className=' pl-4 lg:pl-16 xl:pl-48 w-full flex flex-col items-start gap-12'>
           <TopMenu />
           <Products />
       </div>

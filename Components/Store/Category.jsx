@@ -7,7 +7,7 @@ import SizeCategory from './SizeCatogry'
 
 function Category() {
   return (
-    <div className='w-fit px-4 py-8 h-[550px] flex flex-col items-start bg-neutral-950 border border-neutral-800 gap-4 overflow-y-scroll scrollbar-thin scrollbar-thumb-neutral-600 scrollbar-track-white rounded-md'>
+    <div className='w-fit px-4 py-8 flex flex-col items-start bg-neutral-950 border border-neutral-800 gap-4 rounded-md'>
       <TypeCategory />
       <ColorCategory />
       <SizeCategory />
