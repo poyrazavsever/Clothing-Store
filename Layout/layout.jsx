@@ -30,7 +30,9 @@ function Layout({ children }) {
       </div>
 
 
-      <Footer />
+      <div className='mt-36'>
+        <Footer />
+      </div>
 
 
     </div>
