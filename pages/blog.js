@@ -3,6 +3,7 @@ import React from 'react'
 //Components 
 import Post from '@/Components/Blog/Post'
 import TopMenu from '@/Components/Blog/TopMenu'
+import Popular from '@/Components/Blog/Popular'
 
 function blog() {
   return (
@@ -15,6 +16,7 @@ function blog() {
 
         <div>
             <Post />
+            <Popular />
         </div>
     </div>
   )

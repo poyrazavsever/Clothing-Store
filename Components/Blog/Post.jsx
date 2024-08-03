@@ -7,7 +7,7 @@ import CardItem from '../CardItem'
 function Post() {
   return (
 
-    <div className='mt-12 container mx-auto flex items-start justify-between'>
+    <div className='mt-12 container mx-auto flex items-start justify-between gap-12'>
 
       <Parallax>
         <CardItem img_link="/Blog/post.png" pp_foto="/Blog/pp.jpg" name="Poyraz" title="#SummerInVogue: Aslı İlkbahar ile Bir Yaz Rüyası" descr="Blinq markasının kurucularından Aslı İlkbahar, sımsıcak mevsime dair tüm tercihlerini Vogue Türkiye için listeledi." time="18 min" views="3994" like="400" />
@@ -15,7 +15,7 @@ function Post() {
       </Parallax>
 
 
-      <div className='dark grid lg:grid-cols-2 gap-4'>
+      <div className='dark flex flex-wrap gap-4'>
 
         <CardItem img_link="/Blog/post.png" pp_foto="/Blog/pp.jpg" name="Poyraz" title="#SummerInVogue: Aslı İlkbahar ile Bir Yaz Rüyası" descr="Blinq markasının kurucularından Aslı İlkbahar, sımsıcak mevsime dair tüm tercihlerini Vogue Türkiye için listeledi." time="18 min" views="3994" like="400" />
         <CardItem img_link="/Blog/post.png" pp_foto="/Blog/pp.jpg" name="Poyraz" title="#SummerInVogue: Aslı İlkbahar ile Bir Yaz Rüyası" descr="Blinq markasının kurucularından Aslı İlkbahar, sımsıcak mevsime dair tüm tercihlerini Vogue Türkiye için listeledi." time="18 min" views="3994" like="400" />
