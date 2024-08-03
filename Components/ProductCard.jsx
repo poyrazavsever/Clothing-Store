@@ -1,13 +1,10 @@
 import React from 'react'
 import ReactIcon from './Icon'
-import classNames from 'classnames'
 
 function ProductCard() {
 
-
-
     return (
-        <div>
+        <a href="/productDetail">
             <div className='relative w-48 h-64'>
                 <img src="/Product/product.png" alt="Product promotion" className='absolute w-full h-full rounded' />
                 <div className='w-full h-full !-z-20 rounded dark:bg-zinc-200 bg-[#E5E0DA]'></div>
@@ -33,7 +30,7 @@ function ProductCard() {
                     <span className='text-lime-600 font-semibold'>350$</span>
                 </div>
             </div>
-        </div>
+        </a>
     )
 
 }
