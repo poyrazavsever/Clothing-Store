@@ -3,7 +3,7 @@ import CardItem from '../CardItem'
 import ReactIcon from '../Icon'
 function Popular() {
     return (
-        <div className='w-full container mx-auto mt-12'>
+        <div className='w-full container mx-auto mt-12 relative'>
 
             <div className='w-full flex flex-col items-start gap-4'>
                 <div className='w-full h-[1px] bg-neutral-800'></div>
@@ -29,6 +29,9 @@ function Popular() {
             </button>
 
 
+            {/* BG */}
+
+            <div className='w-1/2 h-full bg-neutral-900 opacity-75 absolute right-0 bottom-0 -z-20'></div>
 
         </div>
     )
