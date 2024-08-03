@@ -6,7 +6,7 @@ import TopMenu from '@/Components/Blog/TopMenu'
 
 function blog() {
   return (
-    <div className='mt-36 mb-12'>
+    <div className='mt-24 mb-12'>
 
         <div>
             <TopMenu />

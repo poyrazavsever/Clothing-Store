@@ -8,7 +8,7 @@ function TopMenu() {
   return (
     <div className='container mx-auto flex flex-col items-start gap-12'>
 
-      <div className='flex items-center justify-between'>
+      <div className='w-full flex items-center justify-between'>
 
         <h1 className='text-6xl font-black tracking-wider text-neutral-200 font-serif'> <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-neutral-200'>Luxe</span> Threads</h1>
 
