@@ -8,7 +8,7 @@ function Collection() {
         <div className='!overflow-hidden bg-zinc-200 flex justify-between relative !z-10'>
 
 
-            <div className='w-1/2 flex flex-col items-start justify-center gap-24 px-24'>
+            <div className='w-1/2 flex flex-col items-start justify-center gap-12 px-24'>
                 <h1 className='text-3xl lg:text-5xl  text-zinc-500 font-bold tracking-widest pt-32'>Our Collection</h1>
 
 
@@ -19,7 +19,7 @@ function Collection() {
                 </div>
 
 
-                <button className='flex items-center font-medium gap-1 text-neutral-700 text-base hover:gap-2 transition-all'>
+                <button className='flex items-center font-medium gap-1 text-neutral-700 text-base hover:gap-2 transition-all pb-8'>
                     <a href='/'>See Our Collection</a>
                     <span><ReactIcon iconName={"FiArrowUpRight"} iconType={"fi"} iconColor="text-neutral-700" /></span>
                 </button>
