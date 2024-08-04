@@ -1,4 +1,4 @@
-# Luxe Threads Website
+# Clothing-Store / Luxe Threads Website
 
 Welcome to the Luxe Threads Website repository! This project represents the front-end development of the Luxe Threads fashion brand's online presence.
 
@@ -33,11 +33,11 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-username/luxe-threads-website.git
+    git clone https://github.com/poyrazavsever/Clothing-Store.git
     ```
 2. **Navigate to the project directory**:
     ```sh
-    cd luxe-threads-website
+    cd Clothing-Store
     ```
 3. **Install dependencies**:
     ```sh
