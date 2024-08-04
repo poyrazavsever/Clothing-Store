@@ -1,40 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Luxe Threads Website
 
-## Getting Started
+Welcome to the Luxe Threads Website repository! This project represents the front-end development of the Luxe Threads fashion brand's online presence.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: React framework for server-side rendering and generating static websites.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **react-icons**: Collection of popular icons for React applications.
+- **react-scroll-parallax**: React component for parallax scrolling effects.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This project is focused on creating a visually appealing and modern web interface for the Luxe Threads brand. It is currently a front-end-only project, with plans to implement backend functionality in the future.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Elegant Design**: Showcases the Luxe Threads fashion collections with a sleek and modern interface.
+- **Parallax Effects**: Adds a dynamic touch to the browsing experience with subtle parallax scrolling effects.
+- **Iconography**: Utilizes a variety of icons to enhance the user interface.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Future Plans
 
-## Learn More
+- **Responsive Design**: As of now, the website does not have a responsive design. We plan to create a dedicated mobile application under the Luxe Threads brand to provide an optimal experience on mobile devices.
+- **Backend Development**: Future updates will include backend functionality to handle user authentication, data management, and other server-side operations.
 
-To learn more about Next.js, take a look at the following resources:
+### Note
+Upon loading the website, you will see an alert box indicating the current limitations regarding responsive design and backend functionality.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run this project locally, follow these steps:
 
-## Deploy on Vercel
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/your-username/luxe-threads-website.git
+    ```
+2. **Navigate to the project directory**:
+    ```sh
+    cd luxe-threads-website
+    ```
+3. **Install dependencies**:
+    ```sh
+    npm install
+    ```
+4. **Run the development server**:
+    ```sh
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Alert Box
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+An alert box will appear upon loading the site to inform users of the current limitations:
+```js
+alert("Please note: This website does not currently have a responsive design. A mobile application will be developed in the future. Backend functionality is also planned for future updates.");
