@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactIcon from '../Icon'
+import ReactIcon from '../ReactIcon'
 
 function Collection() {
   return (

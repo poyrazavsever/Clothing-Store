@@ -1,8 +1,6 @@
 import { useState } from "react"
-import ReactIcon from "../Icon"
+import ReactIcon from "../ReactIcon"
 import classNames from "classnames"
-import Link from "next/link"
-import ReactIcon from "../Icon"
 
 function LoginModal({ isLoginVisible, setIsRegisterVisible, setIsLoginVisible }) {
 
@@ -66,7 +64,7 @@ function LoginModal({ isLoginVisible, setIsRegisterVisible, setIsLoginVisible })
 
                 <div className="pt-5 flex flex-col items-start gap-3">
                     <div className="flex flex-col items-start gap-1">
-                        <p className="text-xs text-neutral-400">Forgot your password?  <Link href="/" className="font-medium  text-neutral-200">Reset it here</Link></p>
+                        <p className="text-xs text-neutral-400">Forgot your password?  <a href="/" className="font-medium  text-neutral-200">Reset it here</a></p>
                     </div>
                     <div className="flex flex-col items-start gap-1">
                         <p className="text-xs text-neutral-400">Not registered yet?  <button className="font-medium  text-neutral-200" onClick={() => {

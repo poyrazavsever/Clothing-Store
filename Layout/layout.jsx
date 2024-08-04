@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
-import LoginModal from '@/components/Auth/LoginModal'
-import RegisterModal from '@/components/Auth/RegisterModal'
+import LoginModal from '@/Components/Auth/LoginModal'
+import RegisterModal from '@/Components/Auth/RegisterModal'
 import classNames from 'classnames';
 
 function Layout({ children }) {

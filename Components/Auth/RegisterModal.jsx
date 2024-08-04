@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ReactIcon from "../Icon"
+import ReactIcon from "../ReactIcon"
 import classNames from "classnames"
 
 

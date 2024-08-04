@@ -1,6 +1,6 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
-import ReactIcon from '../Icon'
+import ReactIcon from '../ReactIcon'
 
 import CardItem from '../CardItem'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from "../Icon"
+import ReactIcon from "../ReactIcon"
 
 function Banner() {
 
@@ -29,22 +29,22 @@ function Banner() {
           <ul className='flex flex-col gap-3 items-start text-neutral-700'>
 
             <div className={`flex items-center gap-1 ${linkStyle}`}>
-              <Icon iconType="ai" iconName="AiFillInstagram" />
+              <ReactIcon iconType="ai" iconName="AiFillInstagram" />
               <li>Instagram</li>
             </div>
 
             <div className={`flex items-center gap-1 ${linkStyle}`}>
-              <Icon iconType="ai" iconName="AiFillFacebook" />
+              <ReactIcon iconType="ai" iconName="AiFillFacebook" />
               <li>Facebook</li>
             </div>
 
             <div className={`flex items-center gap-1 ${linkStyle}`}>
-              <Icon iconType="bi" iconName="BiLogoPinterest" />
+              <ReactIcon iconType="bi" iconName="BiLogoPinterest" />
               <li>Pinterest</li>
             </div>
 
             <div className={`flex items-center gap-1 ${linkStyle}`}>
-              <Icon iconType="ai" iconName="AiFillYoutube" />
+              <ReactIcon iconType="ai" iconName="AiFillYoutube" />
               <li>Youtube</li>
             </div>
 

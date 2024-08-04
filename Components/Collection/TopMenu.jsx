@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import ReactIcon from '../Icon'
-import classNames from 'classnames'
 
 function TopMenu() {
 

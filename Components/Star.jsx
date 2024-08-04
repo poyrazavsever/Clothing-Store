@@ -1,4 +1,4 @@
-import ReactIcon from "./Icon";
+import ReactIcon from "./ReactIcon";
 
 function Star({star}) {
 

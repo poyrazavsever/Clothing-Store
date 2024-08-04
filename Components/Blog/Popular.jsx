@@ -1,6 +1,6 @@
 import React from 'react'
 import CardItem from '../CardItem'
-import ReactIcon from '../Icon'
+import ReactIcon from '../ReactIcon'
 function Popular() {
     return (
         <div className='w-full container mx-auto mt-12 relative'>

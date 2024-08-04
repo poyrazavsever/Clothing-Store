@@ -1,5 +1,4 @@
-import Icon from "../Icon"
-import Link from "next/link"
+import Icon from "../ReactIcon"
 
 function FooterBottom() {
 

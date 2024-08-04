@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactIcon from '../Icon'
+import ReactIcon from '../ReactIcon'
 
 //Components 
 import TopMenu from './TopMenu'

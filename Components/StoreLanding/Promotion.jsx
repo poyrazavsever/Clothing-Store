@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductCard from '../ProductCard'
-import ReactIcon from '../Icon'
+import ReactIcon from '../ReactIcon'
 import { Parallax } from 'react-scroll-parallax'
 
 function Promotion() {

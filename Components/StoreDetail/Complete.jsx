@@ -1,7 +1,6 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import ProductCard from '../ProductCard'
-import ReactIcon from '../Icon'
 function Complete() {
     return (
         <div className='relative h-full !overflow-hidden flex flex-col items-start justify-center gap-16 py-32 dark'>
