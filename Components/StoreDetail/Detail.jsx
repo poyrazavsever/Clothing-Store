@@ -1,8 +1,12 @@
 import React from 'react'
+import ProductDetail from './ProductDetail'
 
 function Detail() {
   return (
-    <div>Detail</div>
+    <div>
+      <ProductDetail />
+    
+    </div>
   )
 }
 
