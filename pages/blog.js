@@ -7,7 +7,7 @@ import Popular from '@/Components/Blog/Popular'
 
 function blog() {
   return (
-    <div className='mt-24 mb-12'>
+    <div className='mt-24 mb-12 hidden lg:block'>
 
         <div>
             <TopMenu />

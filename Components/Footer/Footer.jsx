@@ -3,7 +3,7 @@ import FooterBottom from "./FooterBottom"
 
 function Footer() {
   return (
-    <div className="relative md:container md:mx-auto mb-32 z-30">
+    <div className="relative md:container md:mx-auto mb-32 z-30 hidden lg:block">
 
       <div>
         <FooterTop />

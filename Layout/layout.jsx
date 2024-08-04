@@ -11,30 +11,32 @@ function Layout({ children }) {
   const [isRegisterVisible, setIsRegisterVisible] = useState(false);
 
   return (
-    <div className={classNames({
-      "h-screen !overflow-x-hidden": true,
-      "overflow-hidden ": isLoginVisible || isRegisterVisible,
-      "": !isLoginVisible || !isRegisterVisible
-    })}>
+    <div>
+      <div className={classNames({
+        "h-screen !overflow-x-hidden": true,
+        "overflow-hidden ": isLoginVisible || isRegisterVisible,
+        "": !isLoginVisible || !isRegisterVisible
+      })}>
 
-      <Navbar setIsRegisterVisible={setIsRegisterVisible} />
+        <Navbar setIsRegisterVisible={setIsRegisterVisible} />
 
-      <div>
-        <LoginModal isLoginVisible={isLoginVisible} setIsRegisterVisible={setIsRegisterVisible} setIsLoginVisible={setIsLoginVisible} />
-        <RegisterModal isRegisterVisible={isRegisterVisible} setIsLoginVisible={setIsLoginVisible} setIsRegisterVisible={setIsRegisterVisible} />
+        <div>
+          <LoginModal isLoginVisible={isLoginVisible} setIsRegisterVisible={setIsRegisterVisible} setIsLoginVisible={setIsLoginVisible} />
+          <RegisterModal isRegisterVisible={isRegisterVisible} setIsLoginVisible={setIsLoginVisible} setIsRegisterVisible={setIsRegisterVisible} />
+        </div>
+
+
+        <div>
+          {children}
+        </div>
+
+
+        <div className='relative pt-36 bg-neutral-950 z-20'>
+          <Footer />
+        </div>
+
+
       </div>
-
-
-      <div>
-        {children}
-      </div>
-
-
-      <div className='relative pt-36 bg-neutral-950 z-20'>
-        <Footer />
-      </div>
-
-
     </div>
   )
 }

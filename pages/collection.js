@@ -7,7 +7,7 @@ import Contact from '@/Components/Collection/Contact'
 
 function collection() {
   return (
-    <div>
+    <div className='hidden lg:block'>
         <Banner />
         <CollectionProduct />
         <Contact />

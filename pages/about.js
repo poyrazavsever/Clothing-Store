@@ -7,7 +7,7 @@ import Story from '@/Components/About/Story'
 
 function about() {
   return (
-    <div>
+    <div className='hidden lg:block'>
       <Banner />
       <Story />
       <Collection />

@@ -7,7 +7,7 @@ import Products from '@/Components/Store/Products'
 
 function store() {
   return (
-    <div className='my-36 flex items-start justify-center gap-12 px-32'>
+    <div className='my-36 hidden items-start justify-center gap-12 px-32 lg:flex'>
 
       <div>
         <Category />

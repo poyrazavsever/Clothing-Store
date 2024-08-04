@@ -3,7 +3,7 @@ import Detail from '@/Components/StoreDetail/Detail'
 
 function ProductDetail() {
   return (
-    <div><Detail /></div>
+    <div className='hidden lg:block'><Detail /></div>
   )
 }
 
