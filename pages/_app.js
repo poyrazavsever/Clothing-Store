@@ -4,10 +4,16 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function App({ Component, pageProps }) {
   return (
-    <ParallaxProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ParallaxProvider>
+    <div>
+      <Head>
+        <title>Luxe Threads Clothing Store</title>
+      </Head>
+
+      <ParallaxProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ParallaxProvider>
+    </div>
   );
 }
