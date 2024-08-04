@@ -3,9 +3,11 @@ import ProductDetail from './ProductDetail'
 
 function Detail() {
   return (
-    <div>
-      <ProductDetail />
-    
+    <div className='mt-16'>
+      <div className='py-12'>
+        <ProductDetail />
+      </div>
+
     </div>
   )
 }
