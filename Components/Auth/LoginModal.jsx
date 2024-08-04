@@ -1,7 +1,8 @@
 import { useState } from "react"
-import Icon from "../Icon"
+import ReactIcon from "../Icon"
 import classNames from "classnames"
 import Link from "next/link"
+import ReactIcon from "../Icon"
 
 function LoginModal({ isLoginVisible, setIsRegisterVisible, setIsLoginVisible }) {
 
@@ -28,7 +29,7 @@ function LoginModal({ isLoginVisible, setIsRegisterVisible, setIsLoginVisible })
                     <h2 className='text-2xl font-semibold text-neutral-200'>Log in</h2>
 
                     <button onClick={() => setIsLoginVisible(false)}>
-                        <Icon iconType="ai" iconName="AiOutlineCloseCircle" iconColor="text-neutral-200" classname="text-2xl pr-8" />
+                        <ReactIcon iconType="ai" iconName="AiOutlineCloseCircle" iconColor="text-neutral-200" classname="text-2xl pr-8" />
                     </button>
 
 
@@ -49,10 +50,10 @@ function LoginModal({ isLoginVisible, setIsRegisterVisible, setIsLoginVisible })
                             <input type={visiblePassword ? "text" : "password"} placeholder='********' className='w-full px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 text-white' />
                             {!visiblePassword ?
                                 (<button onClick={handlePassword}>
-                                    <Icon iconType="ai" iconName="AiOutlineEye" iconColor="text-neutral-400" classname={passwordBtn} />
+                                    <ReactIcon iconType="ai" iconName="AiOutlineEye" iconColor="text-neutral-400" classname={passwordBtn} />
                                 </button>) :
                                 (<button onClick={handlePassword}>
-                                    <Icon iconType="ai" iconName="AiOutlineEyeInvisible" iconColor="text-neutral-400" classname={passwordBtn} />
+                                    <ReactIcon iconType="ai" iconName="AiOutlineEyeInvisible" iconColor="text-neutral-400" classname={passwordBtn} />
                                 </button>)}
                         </div>
                     </div>
@@ -85,12 +86,12 @@ function LoginModal({ isLoginVisible, setIsRegisterVisible, setIsLoginVisible })
                 <div className="flex flex-col items-start gap-4 mt-5">
 
                     <button className="flex font-medium hover:bg-neutral-700 items-center text-sm gap-2 justify-center w-full px-4 py-3 rounded-sm bg-neutral-800 text-neutral-200 tracking-wider transition-all ">
-                        <Icon iconType="fc" iconName="FcGoogle" classname="text-xl" iconColor="text-neutral-600" />
+                        <ReactIcon iconType="fc" iconName="FcGoogle" classname="text-xl" iconColor="text-neutral-600" />
                         <span>Log in with google</span>
                     </button>
 
                     <button className="flex font-medium hover:bg-neutral-700 items-center text-sm gap-2 justify-center w-full px-4 py-3 rounded-sm bg-neutral-800 text-neutral-200 tracking-wider transition-all ">
-                        <Icon iconType="bi" iconName="BiLogoFacebookCircle" classname="text-xl " iconColor="text-blue-400" />
+                        <ReactIcon iconType="bi" iconName="BiLogoFacebookCircle" classname="text-xl " iconColor="text-blue-400" />
                         <span>Login with facebook</span>
                     </button>
 

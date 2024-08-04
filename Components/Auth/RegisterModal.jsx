@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Icon from "../Icon"
+import ReactIcon from "../Icon"
 import classNames from "classnames"
 
 
@@ -29,7 +29,7 @@ function RegisterModal({ isRegisterVisible, setIsLoginVisible, setIsRegisterVisi
                     <h2 className='text-2xl font-semibold text-neutral-200'>Sign in</h2>
 
                     <button onClick={() => setIsRegisterVisible(false)}>
-                        <Icon iconType="ai" iconName="AiOutlineCloseCircle" iconColor="text-neutral-200" classname="text-2xl pr-8" />
+                        <ReactIcon iconType="ai" iconName="AiOutlineCloseCircle" iconColor="text-neutral-200" classname="text-2xl pr-8" />
                     </button>
 
 
@@ -56,10 +56,10 @@ function RegisterModal({ isRegisterVisible, setIsLoginVisible, setIsRegisterVisi
                             <input id="password" type={visiblePassword ? "text" : "password"} placeholder='********' className='w-full px-4 py-2 bg-neutral-950 opacity-80 focus:outline-none border-neutral-950 placeholder:text-sm placeholder:tracking-wide placeholder:text-zinc-500 text-white' />
                             {!visiblePassword ?
                                 (<button onClick={handlePassword}>
-                                    <Icon iconType="ai" iconName="AiOutlineEye" iconColor="text-neutral-400" classname={passwordBtn} />
+                                    <ReactIcon iconType="ai" iconName="AiOutlineEye" iconColor="text-neutral-400" classname={passwordBtn} />
                                 </button>) :
                                 (<button onClick={handlePassword}>
-                                    <Icon iconType="ai" iconName="AiOutlineEyeInvisible" iconColor="text-neutral-400" classname={passwordBtn} />
+                                    <ReactIcon iconType="ai" iconName="AiOutlineEyeInvisible" iconColor="text-neutral-400" classname={passwordBtn} />
                                 </button>)}
                         </div>
                     </div>
