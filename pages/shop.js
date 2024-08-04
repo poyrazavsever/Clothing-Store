@@ -7,13 +7,13 @@ import Products from '@/Components/Store/Products'
 
 function store() {
   return (
-    <div className='my-36 hidden items-start justify-center gap-12 px-32 lg:flex'>
+    <div className='my-36 flex items-start justify-center gap-12 px-32'>
 
       <div>
         <Category />
       </div>
 
-      <div className=' pl-4 lg:pl-16 xl:pl-48 w-full flex flex-col items-start gap-12'>
+      <div className='pl-4 lg:pl-16 xl:pl-48 w-full flex flex-col items-start gap-12'>
           <TopMenu />
           <Products />
       </div>

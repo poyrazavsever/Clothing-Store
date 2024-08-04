@@ -22,7 +22,7 @@ function ProductCard() {
                 </div>
 
             </div>
-            <div className='pt-4 flex flex-col gap-3 items-start justify-center w-56'>
+            <div className='pt-4 flex flex-col gap-3 items-start justify-center w-48'>
                 <h4 className='font-semibold text-base dark:text-zinc-100 text-zinc-900 tracking-widest'>Brunello Cucinelli</h4>
                 <p className='text-sm font-light dark:text-zinc-200 text-zinc-800 tracking-wide line-clamp-1'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 <div className='flex items-center justify-start gap-2'>

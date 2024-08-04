@@ -2,7 +2,7 @@ import React from 'react'
 
 function Mobile() {
   return (
-    <div className='h-screen w-screen flex items-center justify-center p-24'>
+    <div className='h-screen flex items-center justify-center p-24 lg:hidden'>
       <div className='flex flex-col items-start gap-4'>
 
         <h1 className='text-5xl tracking-widest font-black font-serif text-neutral-200'><span className='bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-neutral-300'>Luxe</span> Threads</h1>

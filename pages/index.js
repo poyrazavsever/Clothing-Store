@@ -7,9 +7,7 @@ import Storelanding from "@/Components/StoreLanding/Storelanding";
 export default function Home() {
   return (
     <div>
-      <div className="lg:hidden block"> 
-        <Mobile />
-      </div>
+      <Mobile />
       <div className="hidden lg:block">
         <Storelanding />
       </div>
