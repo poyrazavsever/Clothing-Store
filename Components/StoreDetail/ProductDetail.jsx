@@ -8,7 +8,7 @@ function ProductDetail() {
     const imageStyle = "w-48"
     const [isBody, setIsBody] = useState("XS")
     return (
-        <div className='flex items-center justify-between relative'>
+        <div className='flex items-center justify-between gap-8 lg:justify-center lg:gap-24 relative'>
             <div className='flex'>
 
                 <div>
@@ -24,7 +24,8 @@ function ProductDetail() {
             </div>
             <div className='flex flex-col items-start'>
 
-                <h4 className='font-medium'>Margherita MACCAPANI</h4>
+                <h4 className='text-xl font-semibold tracking-wider text-neutral-200'>Margherita MACCAPANI</h4>
+                <p className='text-sm tracking-wide text-neutral-400 py-2'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, expedita.</p>
 
                 {/* Değerlendirme */}
 
@@ -32,7 +33,7 @@ function ProductDetail() {
 
                     <Star star="4" />
 
-                    <span className='text-sm text-neutral-400'>1200 Değerlendirme</span>
+                    <span className='text-sm text-neutral-400'>1200 Evaluation</span>
 
                 </div>
 
@@ -40,29 +41,29 @@ function ProductDetail() {
 
                 <div className='flex flex-col items-start mt-4'>
                     <span className='text-xs text-neutral-400 line-through pr-2'>800$</span>
-                    <span className='text-xl md:text-3xl font-semibold text-tert-200'>640$</span>
+                    <span className='text-xl md:text-3xl text-green-600 font-semibold text-tert-200'>640$</span>
                 </div>
 
-                <div className='h-[1px] w-full bg-neutral-300 rounded-full my-3'></div>
+                <div className='h-[1px] w-full bg-neutral-300 rounded-full my-5'></div>
 
 
                 {/* Beden */}
 
                 <div className='flex flex-col items-start gap-2 mt-5'>
 
-                    <h6 className='text-sm text-neutral-800'>Beden: <span className='font-semibold'>{isBody}</span></h6>
+                    <h6 className='text-sm text-neutral-500'>Size: <span className='font-semibold'>{isBody}</span></h6>
 
                     <Body isBody={isBody} setIsBody={setIsBody} />
 
                 </div>
 
-                <button className='w-96 py-3 rounded-md bg-tert-200 text-white hover:bg-tert-100 transition-all mt-8'>Sepete Ekle</button>
+                <button className='w-96 py-3 uppercase rounded-md font-semibold bg-orange-500 text-neurral-950 hover:bg-tert-100 transition-all mt-8'>Add to Basket</button>
 
                 {/* Öne Çıkanlar  */}
 
                 <div className='flex flex-col items-start gap-4 mt-8'>
                     <div className='flex flex-col items-start gap-2'>
-                        <h6 className='text-sm text-neutral-800'>Öne Çıkan Bilgiler</h6>
+                        <h6 className='text-sm text-neutral-200'>Öne Çıkan Bilgiler</h6>
 
                         <ul className='flex flex-col items-start gap-1'>
 
@@ -78,7 +79,7 @@ function ProductDetail() {
                     </div>
 
 
-                    <button className='w-96 py-1 text-sm border uppercase border-neutral-600 text-neutral-600 hover:bg-neutral-600 hover:text-neutral-50 transition-all'>ürünün tüm özellikleri</button>
+                    <button className='w-96 py-1 text-sm border uppercase border-neutral-300 text-neutral-300 hover:bg-neutral-300 hover:text-neutral-600 transition-all'>ürünün tüm özellikleri</button>
 
                 </div>
 
